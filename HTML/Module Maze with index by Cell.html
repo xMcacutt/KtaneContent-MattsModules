@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Module Maze — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <script src="js/jquery.3.7.0.min.js"></script>
+    <script src="js/Utilities/svg-utils.js"></script>
+    <script src="js/Modules/Module Maze.js"></script>
+    <style>
+        .mod-maze .highlightable { fill: transparent; }
+        .mod-maze :not(.highlightable) {
+            user-select: none;
+            pointer-events: none;
+        }
+
+        #module-index {
+            font-size: 7pt;
+            column-count: 4;
+            line-height: 1;
+            padding: 0;
+            list-style-type: none;
+        }
+
+            #module-index li {
+                padding: 0;
+            }
+        .dark svg text { fill: #DDD; }
+        .sh { margin: 0; }
+        .page { background-position: top; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Module Maze</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Module Maze.svg" class="diagram">
+                <h2>On the Subject of Module Maze</h2>
+                <p class="flavour-text">This seems to be some kind of maze, probably stolen off a restaurant placemat in a world dominated by crazy bomb-making robots.</p>
+
+                <p>The module shows the icon of another module and 4 movement buttons. The icon displayed at the start is your exit. Once you take note of your exit, press the display for your starting icon. You will then be able to use the 4 arrow buttons to go through the maze displayed below. Attempting to cross borders or selecting the display at any incorrect icon will result in a strike. Selecting an incorrect icon will result in the destination icon showing on the screen, and will ignore inputs until the display is selected again.</p>
+
+                <svg class="mod-maze" xmlns="http://www.w3.org/2000/svg" viewBox="-.8 -.6 20.9 20.7" font-size='.5'>
+                    <g transform='translate(.5 -.2)' text-anchor='middle'>
+                        <text x='0'>A</text>
+                        <text x='1'>B</text>
+                        <text x='2'>C</text>
+                        <text x='3'>D</text>
+                        <text x='4'>E</text>
+                        <text x='5'>F</text>
+                        <text x='6'>G</text>
+                        <text x='7'>H</text>
+                        <text x='8'>I</text>
+                        <text x='9'>J</text>
+                        <text x='10'>K</text>
+                        <text x='11'>L</text>
+                        <text x='12'>M</text>
+                        <text x='13'>N</text>
+                        <text x='14'>O</text>
+                        <text x='15'>P</text>
+                        <text x='16'>Q</text>
+                        <text x='17'>R</text>
+                        <text x='18'>S</text>
+                        <text x='19'>T</text>
+                    </g>
+                    <g transform='translate(-.2 .7)' text-anchor='end'>
+                        <text y='0'>1</text>
+                        <text y='1'>2</text>
+                        <text y='2'>3</text>
+                        <text y='3'>4</text>
+                        <text y='4'>5</text>
+                        <text y='5'>6</text>
+                        <text y='6'>7</text>
+                        <text y='7'>8</text>
+                        <text y='8'>9</text>
+                        <text y='9'>10</text>
+                        <text y='10'>11</text>
+                        <text y='11'>12</text>
+                        <text y='12'>13</text>
+                        <text y='13'>14</text>
+                        <text y='14'>15</text>
+                        <text y='15'>16</text>
+                        <text y='16'>17</text>
+                        <text y='17'>18</text>
+                        <text y='18'>19</text>
+                        <text y='19'>20</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 2</div>
+        </div>
+        <div class="page page-bg-03">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Module Maze</span>
+            </div>
+            <div class="page-content">
+                <h2 class="sh">Module Index</h2>
+
+                <ul class="sh" id="module-index">
+                    <!--@@-->
+                    <li>Wire Sequence: A1</li>
+                    <li>Switches: A2</li>
+                    <li>Logic: A3</li>
+                    <li>Perspective Pegs: A4</li>
+                    <li>Third Base: A5</li>
+                    <li>Neutralization: A6</li>
+                    <li>X-Ray: A7</li>
+                    <li>Shape Memory: A8</li>
+                    <li>Maintenance: A9</li>
+                    <li>LEGOs: A10</li>
+                    <li>Tax Returns: A11</li>
+                    <li>USA Maze: A12</li>
+                    <li>Simon Samples: A13</li>
+                    <li>Sonic &amp; Knuckles: A14</li>
+                    <li>The Crystal Maze: A15</li>
+                    <li>Christmas Presents: A16</li>
+                    <li>Hogwarts: A17</li>
+                    <li>Flavor Text EX: A18</li>
+                    <li>Passport Control: A19</li>
+                    <li>Graphic Memory: A20</li>
+                    <li>Wires: B1</li>
+                    <li>Two Bits: B2</li>
+                    <li>Crazy Talk: B3</li>
+                    <li>Microcontroller: B4</li>
+                    <li>Souvenir: B5</li>
+                    <li>Web Design: B6</li>
+                    <li>QR Code: B7</li>
+                    <li>Symbol Cycle: B8</li>
+                    <li>Blind Maze: B9</li>
+                    <li>Rubik’s Clock: B10</li>
+                    <li>The Jewel Vault: B11</li>
+                    <li>Binary Tree: B12</li>
+                    <li>Character Shift: B13</li>
+                    <li>Quintuples: B14</li>
+                    <li>Cruel Countdown: B15</li>
+                    <li>Hieroglyphics: B16</li>
+                    <li>Dominoes: B17</li>
+                    <li>Decolored Squares: B18</li>
+                    <li>Left and Right: B19</li>
+                    <li>Timing is Everything: B20</li>
+                    <li>Who’s on First: C1</li>
+                    <li>Word Scramble: C2</li>
+                    <li>Adventure Game: C3</li>
+                    <li>Murder: C4</li>
+                    <li>Word Search: C5</li>
+                    <li>Chord Qualities: C6</li>
+                    <li>Button Masher: C7</li>
+                    <li>Hunting: C8</li>
+                    <li>Backgrounds: C9</li>
+                    <li>Font Select: C10</li>
+                    <li>Digital Root: C11</li>
+                    <li>The Time Keeper: C12</li>
+                    <li>Uncolored Squares: C13</li>
+                    <li>The Sphere: C14</li>
+                    <li>Countdown: C15</li>
+                    <li>Functions: C16</li>
+                    <li>Simon Speaks: C17</li>
+                    <li>Homophones: C18</li>
+                    <li>Wingdings: C19</li>
+                    <li>Quiz Buzz: C20</li>
+                    <li>Venting Gas: D1</li>
+                    <li>Anagrams: D2</li>
+                    <li>Turn The Keys: D3</li>
+                    <li>The Gamepad: D4</li>
+                    <li>Broken Buttons: D5</li>
+                    <li>Creation: D6</li>
+                    <li>Random Number Generator: D7</li>
+                    <li>Extended Password: D8</li>
+                    <li>Mortal Kombat: D9</li>
+                    <li>The Stopwatch: D10</li>
+                    <li>Graffiti Numbers: D11</li>
+                    <li>Lightspeed: D12</li>
+                    <li>Dragon Energy: D13</li>
+                    <li>Coffeebucks: D14</li>
+                    <li>Catchphrase: D15</li>
+                    <li>Scripting: D16</li>
+                    <li>Discolored Squares: D17</li>
+                    <li>DetoNATO: D18</li>
+                    <li>The Hexabutton: D19</li>
+                    <li>Wavetapping: D20</li>
+                    <li>Simon Says: E1</li>
+                    <li>Combination Lock: E2</li>
+                    <li>Turn The Key: E3</li>
+                    <li>Tic Tac Toe: E4</li>
+                    <li>Simon Screams: E5</li>
+                    <li>Rubik’s Cube: E6</li>
+                    <li>Color Morse: E7</li>
+                    <li>Curriculum: E8</li>
+                    <li>Mashematics: E9</li>
+                    <li>Pie: E10</li>
+                    <li>Marble Tumble: E11</li>
+                    <li>Black Hole: E12</li>
+                    <li>Flashing Lights: E13</li>
+                    <li>Colorful Madness: E14</li>
+                    <li>Blockbusters: E15</li>
+                    <li>Needy Mrs Bob: E16</li>
+                    <li>Flip The Coin: E17</li>
+                    <li>Air Traffic Controller: E18</li>
+                    <li>The Plunger: E19</li>
+                    <li>The Hypercube: E20</li>
+                    <li>Password: F1</li>
+                    <li>Filibuster: F2</li>
+                    <li>Mystic Square: F3</li>
+                    <li>Who’s That Monsplode?: F4</li>
+                    <li>Laundry: F5</li>
+                    <li>FizzBuzz: F6</li>
+                    <li>Mastermind Cruel: F7</li>
+                    <li>Braille: F8</li>
+                    <li>Faulty Backgrounds: F9</li>
+                    <li>The Wire: F10</li>
+                    <li>X01: F11</li>
+                    <li>Simon’s Star: F12</li>
+                    <li>3D Tunnels: F13</li>
+                    <li>Bases: F14</li>
+                    <li>IKEA: F15</li>
+                    <li>Simon Spins: F16</li>
+                    <li>Krazy Talk: F17</li>
+                    <li>SYNC-125 [3]: F18</li>
+                    <li>Genetic Sequence: F19</li>
+                    <li>Speak English: F20</li>
+                    <li>Morse Code: G1</li>
+                    <li>Motion Sense: G2</li>
+                    <li>Plumbing: G3</li>
+                    <li>Monsplode, Fight!: G4</li>
+                    <li>Modules Against Humanity: G5</li>
+                    <li>The Clock: G6</li>
+                    <li>Mastermind Simple: G7</li>
+                    <li>Mafia: G8</li>
+                    <li>Radiator: G9</li>
+                    <li>The London Underground: G10</li>
+                    <li>Logical Buttons: G11</li>
+                    <li>Morse War: G12</li>
+                    <li>Synchronization: G13</li>
+                    <li>Lion’s Share: G14</li>
+                    <li>Retirement: G15</li>
+                    <li>Ten-Button Color Code: G16</li>
+                    <li>Numbers: G17</li>
+                    <li>Westeros: G18</li>
+                    <li>Micro-Modules: G19</li>
+                    <li>Stack’em: G20</li>
+                    <li>Memory: H1</li>
+                    <li>Square Button: H2</li>
+                    <li>Cruel Piano Keys: H3</li>
+                    <li>Shape Shift: H4</li>
+                    <li>Complicated Buttons: H5</li>
+                    <li>LED Encryption: H6</li>
+                    <li>Gridlock: H7</li>
+                    <li>Festive Piano Keys: H8</li>
+                    <li>Modern Cipher: H9</li>
+                    <li>Logic Gates: H10</li>
+                    <li>The Code: H11</li>
+                    <li>The Stock Market: H12</li>
+                    <li>The Switch: H13</li>
+                    <li>Snooker: H14</li>
+                    <li>Periodic Table: H15</li>
+                    <li>Cursed Double-Oh: H16</li>
+                    <li>Simon’s Stages: H17</li>
+                    <li>Morse Identification: H18</li>
+                    <li>Elder Futhark: H19</li>
+                    <li>Seven Wires: H20</li>
+                    <li>Maze: I1</li>
+                    <li>Simon States: I2</li>
+                    <li>Safety Safe: I3</li>
+                    <li>Follow the Leader: I4</li>
+                    <li>Battleship: I5</li>
+                    <li>Edgework: I6</li>
+                    <li>Big Circle: I7</li>
+                    <li>Flags: I8</li>
+                    <li>LED Grid: I9</li>
+                    <li>Forget Everything: I10</li>
+                    <li>Tap Code: I11</li>
+                    <li>Mineseeker: I12</li>
+                    <li>Reverse Morse: I13</li>
+                    <li>Blackjack: I14</li>
+                    <li>101 Dalmatians: I15</li>
+                    <li>Crackbox: I16</li>
+                    <li>Free Parking: I17</li>
+                    <li>Pigpen Rotations: I18</li>
+                    <li>Module Maze: I19</li>
+                    <li>Colored Keys: I20</li>
+                    <li>Knob: J1</li>
+                    <li>Round Keypad: J2</li>
+                    <li>Tetris: J3</li>
+                    <li>Friendship: J4</li>
+                    <li>Text Field: J5</li>
+                    <li>Bitwise Operations: J6</li>
+                    <li>Morse-A-Maze: J7</li>
+                    <li>Timezone: J8</li>
+                    <li>Sink: J9</li>
+                    <li>Grid Matching: J10</li>
+                    <li>Simon Sings: J11</li>
+                    <li>Maze Scrambler: J12</li>
+                    <li>Manometers: J13</li>
+                    <li>Party Time: J14</li>
+                    <li>Schlag den Bomb: J15</li>
+                    <li>Street Fighter: J16</li>
+                    <li>Cookie Jars: J17</li>
+                    <li>LED Math: J18</li>
+                    <li>Tasha Squeals: J19</li>
+                    <li>The Troll: J20</li>
+                    <li>Keypad: K1</li>
+                    <li>Listening: K2</li>
+                    <li>Cryptography: K3</li>
+                    <li>The Bulb: K4</li>
+                    <li>Symbolic Password: K5</li>
+                    <li>Fast Math: K6</li>
+                    <li>Colored Switches: K7</li>
+                    <li>Polyhedral Maze: K8</li>
+                    <li>The iPhone: K9</li>
+                    <li>Color Decoding: K10</li>
+                    <li>Simon Sends: K11</li>
+                    <li>The Number Cipher: K12</li>
+                    <li>Shikaku: K13</li>
+                    <li>Accumulation: K14</li>
+                    <li>Mahjong: K15</li>
+                    <li>The Labyrinth: K16</li>
+                    <li>Alchemy: K17</li>
+                    <li>Alphabetical Order: K18</li>
+                    <li>Forget This: K19</li>
+                    <li>Planets: K20</li>
+                    <li>Complicated Wires: L1</li>
+                    <li>Foreign Exchange Rates: L2</li>
+                    <li>Chess: L3</li>
+                    <li>Alphabet: L4</li>
+                    <li>Wire Placement: L5</li>
+                    <li>Minesweeper: L6</li>
+                    <li>Perplexing Wires: L7</li>
+                    <li>Symbolic Coordinates: L8</li>
+                    <li>The Swan: L9</li>
+                    <li>The Sun: L10</li>
+                    <li>Synonyms: L11</li>
+                    <li>Alphabet Numbers: L12</li>
+                    <li>Wire Spaghetti: L13</li>
+                    <li>The Plunger Button: L14</li>
+                    <li>Kudosudoku: L15</li>
+                    <li>Spinning Buttons: L16</li>
+                    <li>Varicolored Squares: L17</li>
+                    <li>Simon Sounds: L18</li>
+                    <li>Digital Cipher: L19</li>
+                    <li>The Necronomicon: L20</li>
+                    <li>Capacitor Discharge: M1</li>
+                    <li>Answering Questions: M2</li>
+                    <li>Mouse In The Maze: M3</li>
+                    <li>Blind Alley: M4</li>
+                    <li>Double-Oh: M5</li>
+                    <li>Zoo: M6</li>
+                    <li>Monsplode Trading Cards: M7</li>
+                    <li>Poker: M8</li>
+                    <li>Waste Management: M9</li>
+                    <li>Playfair Cipher: M10</li>
+                    <li>Greek Calculus: M11</li>
+                    <li>British Slang: M12</li>
+                    <li>Tennis: M13</li>
+                    <li>The Digit: M14</li>
+                    <li>The Radio: M15</li>
+                    <li>Color Match: M16</li>
+                    <li>Simon Squawks: M17</li>
+                    <li>The Fidget Spinner: M18</li>
+                    <li>Draw: M19</li>
+                    <li>Four-Card Monte: M20</li>
+                    <li>The Button: N1</li>
+                    <li>Orientation Cube: N2</li>
+                    <li>3D Maze: N3</li>
+                    <li>Sea Shells: N4</li>
+                    <li>Cheap Checkout: N5</li>
+                    <li>Binary LEDs: N6</li>
+                    <li>Game of Life Cruel: N7</li>
+                    <li>Sonic the Hedgehog: N8</li>
+                    <li>Human Resources: N9</li>
+                    <li>Tangrams: N10</li>
+                    <li>Simon Shrieks: N11</li>
+                    <li>Double Color: N12</li>
+                    <li>Module Homework: N13</li>
+                    <li>The Jack-O’-Lantern: N14</li>
+                    <li>Modulo: N15</li>
+                    <li>The Festive Jukebox: N16</li>
+                    <li>Zoni: N17</li>
+                    <li>Simon’s Sequence: N18</li>
+                    <li>Grocery Store: N19</li>
+                    <li>aa: N20</li>
+                    <li>Colour Flash: O1</li>
+                    <li>Morsematics: O2</li>
+                    <li>Silly Slots: O3</li>
+                    <li>English Test: O4</li>
+                    <li>Coordinates: O5</li>
+                    <li>Boolean Venn Diagram: O6</li>
+                    <li>Game of Life Simple: O7</li>
+                    <li>Poetry: O8</li>
+                    <li>Skyrim: O9</li>
+                    <li>The Number: O10</li>
+                    <li>Complex Keypad: O11</li>
+                    <li>Maritime Flags: O12</li>
+                    <li>Benedict Cumberbatch: O13</li>
+                    <li>T-Words: O14</li>
+                    <li>Number Nimbleness: O15</li>
+                    <li>Skinny Wires: O16</li>
+                    <li>Mad Memory: O17</li>
+                    <li>Simon Scrambles: O18</li>
+                    <li>Burger Alarm: O19</li>
+                    <li>The Witness: O20</li>
+                    <li>Piano Keys: P1</li>
+                    <li>Connection Check: P2</li>
+                    <li>Number Pad: P3</li>
+                    <li>Rock-Paper-Scissors-Lizard-Spock: P4</li>
+                    <li>Light Cycle: P5</li>
+                    <li>Point of Order: P6</li>
+                    <li>Nonogram: P7</li>
+                    <li>Button Sequence: P8</li>
+                    <li>Burglar Alarm: P9</li>
+                    <li>Cooking: P10</li>
+                    <li>Subways: P11</li>
+                    <li>Equations: P12</li>
+                    <li>Signals: P13</li>
+                    <li>Divided Squares: P14</li>
+                    <li>Pay Respects: P15</li>
+                    <li>The Hangover: P16</li>
+                    <li>Unrelated Anagrams: P17</li>
+                    <li>Harmony Sequence: P18</li>
+                    <li>Subscribe to Pewdiepie: P19</li>
+                    <li>The Giant’s Drink: P20</li>
+                    <li>Semaphore: Q1</li>
+                    <li>Letter Keys: Q2</li>
+                    <li>Probing: Q3</li>
+                    <li>Hexamaze: Q4</li>
+                    <li>HTTP Response: Q5</li>
+                    <li>Ice Cream: Q6</li>
+                    <li>S.E.T.: Q7</li>
+                    <li>Algebra: Q8</li>
+                    <li>Press X: Q9</li>
+                    <li>Superlogic: Q10</li>
+                    <li>Lasers: Q11</li>
+                    <li>Determinants: Q12</li>
+                    <li>Horrible Memory: Q13</li>
+                    <li>Connection Device: Q14</li>
+                    <li>Challenge &amp; Contact: Q15</li>
+                    <li>Factory Maze: Q16</li>
+                    <li>Bartending: Q17</li>
+                    <li>Unfair Cipher: Q18</li>
+                    <li>Purgatory: Q19</li>
+                    <li>Digit String: Q20</li>
+                    <li>Math: R1</li>
+                    <li>Forget Me Not: R2</li>
+                    <li>Resistors: R3</li>
+                    <li>Bitmaps: R4</li>
+                    <li>Rhythms: R5</li>
+                    <li>Hex To Decimal: R6</li>
+                    <li>Refill that Beer!: R7</li>
+                    <li>Visual Impairment: R8</li>
+                    <li>European Travel: R9</li>
+                    <li>The Moon: R10</li>
+                    <li>Turtle Robot: R11</li>
+                    <li>Pattern Cube: R12</li>
+                    <li>Boggle: R13</li>
+                    <li>Instructions: R14</li>
+                    <li>The Triangle: R15</li>
+                    <li>Binary Puzzle: R16</li>
+                    <li>Question Mark: R17</li>
+                    <li>Melody Sequencer: R18</li>
+                    <li>Mega Man 2: R19</li>
+                    <li>Alpha: R20</li>
+                    <li>Emoji Math: S1</li>
+                    <li>Rotary Phone: S2</li>
+                    <li>Skewed Slots: S3</li>
+                    <li>Colored Squares: S4</li>
+                    <li>Color Math: S5</li>
+                    <li>The Screw: S6</li>
+                    <li>Painting: S7</li>
+                    <li>The Jukebox: S8</li>
+                    <li>Error Codes: S9</li>
+                    <li>The Cube: S10</li>
+                    <li>Guitar Chords: S11</li>
+                    <li>Know Your Way: S12</li>
+                    <li>Command Prompt: S13</li>
+                    <li>Valves: S14</li>
+                    <li>Sueet Wall: S15</li>
+                    <li>Broken Guitar Chords: S16</li>
+                    <li>Shapes And Bombs: S17</li>
+                    <li>Colorful Insanity: S18</li>
+                    <li>Lombax Cubes: S19</li>
+                    <li>Snap!: S20</li>
+                    <li>Lights Out: T1</li>
+                    <li>Astrology: T2</li>
+                    <li>Caesar Cipher: T3</li>
+                    <li>Adjacent Letters: T4</li>
+                    <li>Only Connect: T5</li>
+                    <li>Yahtzee: T6</li>
+                    <li>Color Generator: T7</li>
+                    <li>Identity Parade: T8</li>
+                    <li>Rapid Buttons: T9</li>
+                    <li>Dr. Doctor: T10</li>
+                    <li>Calendar: T11</li>
+                    <li>Splitting The Loot: T12</li>
+                    <li>Boolean Maze: T13</li>
+                    <li>Encrypted Morse: T14</li>
+                    <li>Hot Potato: T15</li>
+                    <li>Regular Crazy Talk: T16</li>
+                    <li>Flavor Text: T17</li>
+                    <li>Gadgetron Vendor: T18</li>
+                    <li>The Stare: T19</li>
+                    <li>Hidden Colors: T20</li>
+                    <!--@@@-->
+                </ul>
+            </div>
+            <div class="page-footer relative-footer">Page 2 of 2</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
