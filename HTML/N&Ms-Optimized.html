@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>N&amp;Ms — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <script src="js/ruleseed.js"></script>
+
+    <script>
+        function setDefaultRules(rnd) {
+            setRules(rnd);
+        }
+
+        function setRules(rnd) {
+            var allStrings = [];
+            for (var strNum = 0; strNum < 32; strNum++)
+            {
+                var strNum2 = strNum;
+                var str = '';
+                for (var b = 0; b < 5; b++)
+                {
+                    str += ((strNum2 & 1) === 1) ? '1': '0';
+                    strNum2 >>= 1;
+                }
+                allStrings.push(str);
+            }
+            rnd.shuffleFisherYates(allStrings);
+            var tableCells = document.querySelectorAll('.nm-table td');
+            for (var i = 0; i < 25; i++)
+                tableCells[i].innerText = allStrings[i];
+            console.log(allStrings);
+        }
+    </script>
+
+    <style>
+        table.nm-table {
+            margin: 2cm auto;
+            clear: both;
+        }
+        table.nm-table td {
+            width: 2cm;
+            text-align: center;
+            vertical-align: center;
+            font-size: 14pt;
+        }
+        table.nm-table tr {
+            height: 2cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">N&amp;Ms</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/N&amp;Ms.svg" class="diagram">
+                <h2>On the Subject of 0&amp;1s</h2>
+                <p class="flavour-text">Guaranteed to be both spiritual and lyrical.</p>
+                <p>
+                    Locate the five words on the chart below. One of these words is not in the same column or row as the other four. Select that word. N = 0, M = 1.
+                </p>
+                <table class="nm-table">
+                    <tr><td>00011</td><td>10100</td><td>00000</td><td>11000</td><td>01101</td></tr>
+                    <tr><td>11101</td><td>10101</td><td>01000</td><td>00100</td><td>10111</td></tr>
+                    <tr><td>10110</td><td>10000</td><td>01111</td><td>01011</td><td>10001</td></tr>
+                    <tr><td>01010</td><td>00001</td><td>11011</td><td>01110</td><td>00110</td></tr>
+                    <tr><td>11111</td><td>01001</td><td>00010</td><td>00101</td><td>11110</td></tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 1</div>
+        </div>
+    </div>
+</body>
+</html>
